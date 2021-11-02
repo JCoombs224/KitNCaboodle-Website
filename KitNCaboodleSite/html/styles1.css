@@ -1,0 +1,243 @@
+﻿/* Master Styles */
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0px;
+    font-family: "Segoe UI", sans-serif;
+    background-image: url(images/bg2.jpg);
+    background-size: auto;
+}
+
+.container {
+    min-height: 100%;
+}
+
+/* Nav Bar Styles */
+.nav-wrapper {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    bottom: 0;
+    z-index: 1;
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 3px rgba(0, 0, 0, .3);
+    transition: display 0.5s;
+    overflow-x: hidden;
+}
+
+.nav-open-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    display: none;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.nav-open-wrapper h1 {
+    position: relative;
+    width: 100%;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-open-button {
+    font-size: 32px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+.nav-wrapper .close-button {
+    display: none;
+    text-align: right;
+    margin-top: 28px;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-top {
+    margin-top: 10px;
+}
+
+.logo-img
+{
+    margin-top: 28px;
+}
+
+.logo-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 28px;
+}
+
+.nav-wrapper > .nav-top > div {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.nav-wrapper > .nav-bottom > div {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.nav-link-wrapper a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.nav-link-wrapper-active a {
+    color: rgb(5,5,5);
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper-active a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.nav-coming-soon > div{
+    color: darkgrey;
+    margin-bottom: 20px;
+}
+
+/* Main Window Styles */
+.main-container {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    padding-left: 260px;
+}
+
+.main {
+    min-height: 100vw;
+    justify-items: center;
+    width: 85%;
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-img-wrapper {
+    display: flex;
+    margin-bottom: 28px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.header-img-wrapper img{
+    resize: both;
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+
+.header-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 28px;
+}
+
+.img-showcase-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.img-showcase img{
+    height: 100%;
+    width: 100%;
+    max-height: 700px;
+    max-width: 500px;
+}
+
+.instagram-wrapper {
+    margin-top: 28px;
+    padding: 60px;
+}
+
+.text-wrapper {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 28px;
+}
+
+.map {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Screen Size Adjustments */
+@media screen and (max-width: 1095px) {
+    .nav-wrapper {
+        display: none;
+        width: 90%;
+        align-content: center;
+    }
+    .nav-top {
+        align-content: center;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .logo-img img {
+        justify-items: center;
+        width: 50%;
+        height: 100%;
+        margin-top: 0px;
+    }
+    .nav-bottom {
+        display: none;
+    }
+    .nav-open-wrapper {
+        display: flex;
+    }
+    .nav-wrapper .close-button {
+        display: block;
+    }
+    .main-container {
+        padding-left: 0px; 
+    }
+    .main {
+        padding-top: 128px;
+        width: 82%;
+    }
+    .img-showcase-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
