@@ -8,7 +8,7 @@ body {
     min-height: 100%;
     margin: 0px;
     font-family: "Segoe UI", sans-serif;
-    background-image: url(images/bg2.jpg);
+    background-image: url(../images/bg2.jpg);
     background-size: auto;
 }
 
@@ -27,7 +27,7 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 0px 3px rgba(0, 0, 0, .3);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.8);
     transition: display 0.5s;
     overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ body {
     width: 100%;
     color: red;
     font-weight: bold;
-    text-align: center;
+    margin-left: 10px;
 }
 
 .nav-open-button {
@@ -90,7 +90,7 @@ body {
 
 .nav-wrapper > .nav-top > div {
     font-size: 1.3em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-bottom: 28px;
 }
 
@@ -114,19 +114,48 @@ body {
 }
 
 .nav-link-wrapper-active a {
-    color: rgb(5,5,5);
-    text-decoration: none;
-    border-bottom: 1px solid black;
-}
-
-.nav-link-wrapper-active a:hover {
     color: red;
     border-bottom: 1px solid red;
+    text-decoration: none;
+}
+
+.nav-shop-wrapper {
+    height: 1.3em;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.nav-shop-wrapper:hover {
+    height: 250px;
+}
+
+.nav-shop-wrapper > div {
+    padding-bottom: 8px;
 }
 
 .nav-coming-soon > div{
     color: darkgrey;
     margin-bottom: 20px;
+}
+
+.shop-link-wrapper a {
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.shop-link-wrapper-active a {
+    color: red;
+    text-decoration: none;
+    border-bottom: 1px solid red;
+}
+
+.shop-link-wrapper a:hover {
+    color: red;
+    border-bottom: 1px solid red;
 }
 
 /* Main Window Styles */
@@ -135,18 +164,19 @@ body {
     justify-content: center;
     justify-items: center;
     display: flex;
-    padding-left: 260px;
+    padding-left: 316px;
 }
 
 .main {
-    min-height: 100vw;
+    min-height: 100vh;
     justify-items: center;
-    width: 85%;
+    width: 95%;
     padding: 28px;
     background-color: rgba(255, 255, 255, 0.95);
     display: flex;
     flex-direction: column;
     height: 100%;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 .header-img-wrapper {
@@ -158,7 +188,6 @@ body {
 
 .header-img-wrapper img{
     resize: both;
-    width: 80%;
     height: auto;
     max-width: 100%;
 }
@@ -187,6 +216,8 @@ body {
 .instagram-wrapper {
     margin-top: 28px;
     padding: 60px;
+    width: 65%;
+    align-self: center;
 }
 
 .text-wrapper {
@@ -202,9 +233,21 @@ body {
     justify-content: center;
 }
 
-/* Screen Size Adjustments */
-@media screen and (max-width: 1095px) {
-    .nav-wrapper {
+.img-darken {
+    transition: 0.8s;
+    filter: brightness(10%);
+}
+
+/* Shop Styles */
+.shop-header-wrapper {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 28px;
+}
+
+    /* Screen Size Adjustments */
+    @media screen and (max-width: 1095px) {
+        .nav-wrapper {
         display: none;
         width: 90%;
         align-content: center;
@@ -232,9 +275,13 @@ body {
     .main-container {
         padding-left: 0px; 
     }
+    .nav-shop-wrapper {
+        height: auto;
+        overflow: visible;
+    }
     .main {
         padding-top: 128px;
-        width: 82%;
+        width: 85%;
     }
     .img-showcase-wrapper {
         flex-direction: column;

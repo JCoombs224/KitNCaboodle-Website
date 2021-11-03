@@ -68,11 +68,11 @@
     </div>
     <!-- Image Darken on Hover Script -->
     <script>
-        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+        const portfolioItems = document.querySelectorAll('shopify-buy__product-img-wrapper')
 
         portfolioItems.forEach(portfolioItem => {
             portfolioItem.addEventListener('mouseover', () => {
-                portfolioItem.childNodes[1].classList.add('img-darken');
+                console.log("1");
             })
             portfolioItem.addEventListener('mouseout', () => {
                 portfolioItem.childNodes[1].classList.remove('img-darken');

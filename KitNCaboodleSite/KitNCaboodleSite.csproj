@@ -5,7 +5,46 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\scripts\js\allitems.js" />
+    <Content Remove="wwwroot\scripts\js\shop\items.js" />
+    <Content Remove="wwwroot\scripts\js\shop\kids.js" />
+    <Content Remove="wwwroot\scripts\js\shop\mens.js" />
+    <Content Remove="wwwroot\scripts\js\shop\womens.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="styles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\donations.html" />
+    <None Include="wwwroot\images\1.jpg" />
+    <None Include="wwwroot\images\bg.jpg" />
+    <None Include="wwwroot\images\bg2.jpg" />
+    <None Include="wwwroot\images\cups.jpg" />
+    <None Include="wwwroot\images\inside.jpg" />
+    <None Include="wwwroot\images\lavalamps.jpg" />
+    <None Include="wwwroot\images\locationlogo.png" />
+    <None Include="wwwroot\images\logo1.png" />
+    <None Include="wwwroot\images\mens1.jpg" />
+    <None Include="wwwroot\images\mens2.jpg" />
+    <None Include="wwwroot\images\mens3.jpg" />
+    <None Include="wwwroot\images\shoppinglogo.jpg" />
+    <None Include="wwwroot\images\storefront.jpg" />
+    <None Include="wwwroot\images\storefront2.jpg" />
+    <None Include="wwwroot\images\surflogo.jpg" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\old\oldindex.html" />
+    <None Include="wwwroot\old\oldstyles.css" />
+    <None Include="wwwroot\scripts\js\shop\items.js" />
+    <None Include="wwwroot\scripts\js\shop\kids.js" />
+    <None Include="wwwroot\scripts\js\shop\womens.js" />
+    <None Include="wwwroot\scripts\js\shop\mens.js" />
+    <None Include="wwwroot\scripts\js\shop\allitems.js" />
+    <None Include="wwwroot\scripts\js\script.js" />
+    <None Include="wwwroot\shop.html" />
+    <None Include="wwwroot\styles\styles1.css" />
   </ItemGroup>
 
 </Project>
