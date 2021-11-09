@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -7,6 +7,7 @@
   <ItemGroup>
     <Content Remove="wwwroot\scripts\js\allitems.js" />
     <Content Remove="wwwroot\scripts\js\shop\items.js" />
+    <Content Remove="wwwroot\scripts\js\shop\jewelry.js" />
     <Content Remove="wwwroot\scripts\js\shop\kids.js" />
     <Content Remove="wwwroot\scripts\js\shop\mens.js" />
     <Content Remove="wwwroot\scripts\js\shop\womens.js" />
@@ -14,6 +15,10 @@
 
   <ItemGroup>
     <Folder Include="styles\" />
+    <Folder Include="wwwroot\scripts\js\shop\jewelry\" />
+    <Folder Include="wwwroot\scripts\js\shop\mens\" />
+    <Folder Include="wwwroot\scripts\js\shop\items\" />
+    <Folder Include="wwwroot\scripts\js\shop\womens\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +42,7 @@
     <None Include="wwwroot\index.html" />
     <None Include="wwwroot\old\oldindex.html" />
     <None Include="wwwroot\old\oldstyles.css" />
+    <None Include="wwwroot\scripts\js\shop\jewelry.js" />
     <None Include="wwwroot\scripts\js\shop\items.js" />
     <None Include="wwwroot\scripts\js\shop\kids.js" />
     <None Include="wwwroot\scripts\js\shop\womens.js" />

@@ -48,6 +48,7 @@
                                     "padding-top": "calc(75% + 15px)",
                                     "position": "relative",
                                     "height": "0",
+                                    "transition": "0.2s",
                                     ":hover": {
                                         "transition": "0.4s",
                                         "transform": "scale(1.05)"

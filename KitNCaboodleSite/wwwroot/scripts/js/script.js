@@ -18,14 +18,3 @@ $(window).resize(function () {
         closeNav();
     }
 });
-
-const shopifyItemImages = document.querySelectorAll('.shopify-buy__product-img-wrapper')
-
-shopifyItemImages.forEach(shopifyItemImages => {
-    shopifyItemImages.addEventListener('mouseover', () => {
-        shopifyItemImages.childNodes[1].classList.add('img-darken');
-    })
-    shopifyItemImages.addEventListener('mouseout', () => {
-        shopifyItemImages.childNodes[1].classList.remove('img-darken');
-    })
-})

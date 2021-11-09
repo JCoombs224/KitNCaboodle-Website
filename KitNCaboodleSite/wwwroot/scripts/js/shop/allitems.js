@@ -84,7 +84,7 @@
                         "contents": {
                             "options": false,
                             "button": false,
-                            "description": true
+                            "description": false
                         },
                         "text": {
                             "button": "View Product"

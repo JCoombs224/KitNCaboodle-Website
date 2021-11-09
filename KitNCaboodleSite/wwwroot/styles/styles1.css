@@ -7,9 +7,31 @@ body {
     height: 100%;
     min-height: 100%;
     margin: 0px;
-    font-family: "Segoe UI", sans-serif;
-    background-image: url(../images/bg2.jpg);
+    font-family: "Questrial", sans-serif;
+    background: url(../images/bg2.jpg);
     background-size: auto;
+
+    /*animation-iteration-count: 1;
+    animation-fill-mode: forwards;*/
+}
+
+.nav-wrapper > div {
+    animation: fadeInAnimation 0.6s ease-in-out;
+ }
+
+.main > div {
+    animation: fadeInAnimation 0.6s ease-in-out;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .container {
@@ -108,10 +130,10 @@ body {
     transition: border-bottom 0.5s;
 }
 
-.nav-link-wrapper a:hover {
-    color: red;
-    border-bottom: 1px solid red;
-}
+    .nav-link-wrapper a:hover {
+        color: red;
+        border-bottom: 1px solid red;
+    }
 
 .nav-link-wrapper-active a {
     color: red;
@@ -119,18 +141,8 @@ body {
     text-decoration: none;
 }
 
-.nav-shop-wrapper {
-    height: 1.3em;
-    overflow: hidden;
-    transition: 1s ease-in-out;
-}
-
-.nav-shop-wrapper:hover {
-    height: 250px;
-}
-
 .nav-shop-wrapper > div {
-    padding-bottom: 8px;
+    padding-bottom: 18px;
 }
 
 .nav-coming-soon > div{
@@ -138,8 +150,12 @@ body {
     margin-bottom: 20px;
 }
 
+.nav-shop-wrapper {
+    transition: height 1s ease-out;
+}
+
+
 .shop-link-wrapper a {
-    font-size: 0.9em;
     color: black;
     text-decoration: none;
     transition: color 0.5s;
@@ -156,6 +172,31 @@ body {
 .shop-link-wrapper a:hover {
     color: red;
     border-bottom: 1px solid red;
+}
+
+.shop-category-wrapper {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-category-wrapper a{
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    padding-bottom: 10px;
+    transition: color 0.5s;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.shop-category-wrapper-active a {
+    color: red;
+    text-decoration: none;
+}
+
+.shop-category-wrapper a:hover {
+    color: red;
 }
 
 /* Main Window Styles */
@@ -204,6 +245,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     justify-items: center;
+    margin-bottom: 24px;
 }
 
 .img-showcase img{
@@ -218,6 +260,11 @@ body {
     padding: 60px;
     width: 65%;
     align-self: center;
+}
+
+.yelp-wrapper {
+    position: relative;
+    width: 100%;
 }
 
 .text-wrapper {
@@ -248,18 +295,19 @@ body {
     /* Screen Size Adjustments */
     @media screen and (max-width: 1095px) {
         .nav-wrapper {
-        display: none;
-        width: 90%;
-        align-content: center;
-    }
+            display: none;
+            width: 60%;
+            align-content: center;
+            animation: fadeInAnimation 0.2s ease-in-out;
+        }
     .nav-top {
         align-content: center;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .logo-img img {
         justify-items: center;
-        width: 50%;
+        width: 35%;
         height: 100%;
         margin-top: 0px;
     }
@@ -271,6 +319,9 @@ body {
     }
     .nav-wrapper .close-button {
         display: block;
+    }
+    .shop-category-wrapper {
+        margin-left: 0px;
     }
     .main-container {
         padding-left: 0px; 
@@ -286,5 +337,14 @@ body {
     .img-showcase-wrapper {
         flex-direction: column;
         align-items: center;
+    }
+        .instagram-wrapper {
+            width: 100%;
+            padding: 0px;
+        }
+}
+@media screen and (max-width: 650px) {
+    .nav-wrapper {
+        width: 85%;
     }
 }
