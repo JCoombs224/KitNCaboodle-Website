@@ -24,8 +24,8 @@
         });
         ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('collection', {
-                id: '368099426524',
-                node: document.getElementById('collection-component-1635914015821'),
+                id: '368099557596',
+                node: document.getElementById('collection-component-1636521677954'),
                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: {
                     "product": {
@@ -47,12 +47,7 @@
                                 "imgWrapper": {
                                     "padding-top": "calc(75% + 15px)",
                                     "position": "relative",
-                                    "height": "0",
-                                    "transition": "0.2s",
-                                    ":hover": {
-                                        "transition": "0.4s",
-                                        "transform": "scale(1.05)"
-                                    }
+                                    "height": "0"
                                 }
                             }
                         },

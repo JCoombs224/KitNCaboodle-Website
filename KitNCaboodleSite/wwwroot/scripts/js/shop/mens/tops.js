@@ -24,8 +24,8 @@
         });
         ShopifyBuy.UI.onReady(client).then(function (ui) {
             ui.createComponent('collection', {
-                id: '368099426524',
-                node: document.getElementById('collection-component-1635914015821'),
+                id: '368099590364',
+                node: document.getElementById('collection-component-1636523092672'),
                 moneyFormat: '%24%7B%7Bamount%7D%7D',
                 options: {
                     "product": {

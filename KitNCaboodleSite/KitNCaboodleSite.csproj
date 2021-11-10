@@ -6,19 +6,28 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\scripts\js\allitems.js" />
+    <Content Remove="wwwroot\scripts\js\shop\alljewelry.js" />
     <Content Remove="wwwroot\scripts\js\shop\items.js" />
-    <Content Remove="wwwroot\scripts\js\shop\jewelry.js" />
+    <Content Remove="wwwroot\scripts\js\shop\jewelrypage.js" />
+    <Content Remove="wwwroot\scripts\js\shop\jewelry\earrings.js" />
+    <Content Remove="wwwroot\scripts\js\shop\jewelry\rings.js" />
     <Content Remove="wwwroot\scripts\js\shop\kids.js" />
+    <Content Remove="wwwroot\scripts\js\shop\kids\boys.js" />
+    <Content Remove="wwwroot\scripts\js\shop\kids\girls.js" />
     <Content Remove="wwwroot\scripts\js\shop\mens.js" />
+    <Content Remove="wwwroot\scripts\js\shop\mens\accessories.js" />
+    <Content Remove="wwwroot\scripts\js\shop\mens\bottoms.js" />
+    <Content Remove="wwwroot\scripts\js\shop\mens\shoes.js" />
+    <Content Remove="wwwroot\scripts\js\shop\mens\tops.js" />
     <Content Remove="wwwroot\scripts\js\shop\womens.js" />
+    <Content Remove="wwwroot\scripts\js\shop\womens\bottoms.js" />
+    <Content Remove="wwwroot\scripts\js\shop\womens\shoes.js" />
+    <Content Remove="wwwroot\scripts\js\shop\womens\tops.js" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="styles\" />
-    <Folder Include="wwwroot\scripts\js\shop\jewelry\" />
-    <Folder Include="wwwroot\scripts\js\shop\mens\" />
     <Folder Include="wwwroot\scripts\js\shop\items\" />
-    <Folder Include="wwwroot\scripts\js\shop\womens\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,13 +51,25 @@
     <None Include="wwwroot\index.html" />
     <None Include="wwwroot\old\oldindex.html" />
     <None Include="wwwroot\old\oldstyles.css" />
-    <None Include="wwwroot\scripts\js\shop\jewelry.js" />
+    <None Include="wwwroot\scripts\js\shop\jewelry\alljewelry.js" />
     <None Include="wwwroot\scripts\js\shop\items.js" />
+    <None Include="wwwroot\scripts\js\shop\jewelry\rings.js" />
+    <None Include="wwwroot\scripts\js\shop\jewelry\earrings.js" />
     <None Include="wwwroot\scripts\js\shop\kids.js" />
+    <None Include="wwwroot\scripts\js\jewelrypage.js" />
+    <None Include="wwwroot\scripts\js\shop\kids\girls.js" />
+    <None Include="wwwroot\scripts\js\shop\kids\boys.js" />
+    <None Include="wwwroot\scripts\js\shop\jewelry\sunglasses.js" />
+    <None Include="wwwroot\scripts\js\shop\mens\shoes.js" />
+    <None Include="wwwroot\scripts\js\shop\mens\bottoms.js" />
+    <None Include="wwwroot\scripts\js\shop\mens\tops.js" />
     <None Include="wwwroot\scripts\js\shop\womens.js" />
     <None Include="wwwroot\scripts\js\shop\mens.js" />
     <None Include="wwwroot\scripts\js\shop\allitems.js" />
     <None Include="wwwroot\scripts\js\script.js" />
+    <None Include="wwwroot\scripts\js\shop\womens\bottoms.js" />
+    <None Include="wwwroot\scripts\js\shop\womens\shoes.js" />
+    <None Include="wwwroot\scripts\js\shop\womens\tops.js" />
     <None Include="wwwroot\shop.html" />
     <None Include="wwwroot\styles\styles1.css" />
   </ItemGroup>

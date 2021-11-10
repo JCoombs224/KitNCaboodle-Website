@@ -9,12 +9,12 @@ function closeNav() {
 }
 
 $(window).resize(function () {
-    if ($(this).width() >= 1080) {
+    if ($(this).width() >= 1078) {
         openNav();
     }
 });
 $(window).resize(function () {
-    if ($(this).width() < 1080) {
+    if ($(this).width() < 1078) {
         closeNav();
     }
 });
