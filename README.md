@@ -1,4 +1,5 @@
 # KitNCaboodle-Website
+[![Version](https://badge.fury.io/gh/tterb%2FHyde.svg)](https://badge.fury.io/gh/tterb%2FHyde)
 <p>
 <h3>This is a website for my mother's <a href="https://www.yelp.com/biz/kit-n-caboodle-oceanside" target="_blank" rel="noopener noreferrer">thrift store</a> located in Oceanside, CA. </h3>
 </p>
