@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\old\**" />
+    <Content Remove="wwwroot\old\**" />
+    <EmbeddedResource Remove="wwwroot\old\**" />
+    <None Remove="wwwroot\old\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\aboutus.html" />
     <Content Remove="wwwroot\contact.html" />
     <Content Remove="wwwroot\scripts\js\allitems.js" />
@@ -53,8 +60,6 @@
     <None Include="wwwroot\images\storefront2.jpg" />
     <None Include="wwwroot\images\surflogo.jpg" />
     <None Include="wwwroot\index.html" />
-    <None Include="wwwroot\old\oldindex.html" />
-    <None Include="wwwroot\old\oldstyles.css" />
     <None Include="wwwroot\scripts\js\shop\jewelry\alljewelry.js" />
     <None Include="wwwroot\scripts\js\shop\items.js" />
     <None Include="wwwroot\scripts\js\shop\jewelry\rings.js" />
