@@ -1,6 +1,6 @@
 # KitNCaboodle-Website
 <p>
-  <h3>This is a website for my mother's thrift store located in Oceanside, CA. </h3>
+<h3>This is a website for my mother's <a href="https://www.yelp.com/biz/kit-n-caboodle-oceanside" target="_blank" rel="noopener noreferrer">thrift store</a> located in Oceanside, CA. </h3>
 </p>
 
 <p>
