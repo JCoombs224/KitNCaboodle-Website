@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\aboutus.html" />
+    <Content Remove="wwwroot\contact.html" />
     <Content Remove="wwwroot\scripts\js\allitems.js" />
     <Content Remove="wwwroot\scripts\js\shop\alljewelry.js" />
     <Content Remove="wwwroot\scripts\js\shop\items.js" />
@@ -31,6 +33,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\aboutus.html" />
+    <None Include="wwwroot\contact.html" />
     <None Include="wwwroot\about.html" />
     <None Include="wwwroot\donations.html" />
     <None Include="wwwroot\images\1.jpg" />
