@@ -6,11 +6,7 @@
 </p>
 
 <p>
-It contains information about the shop and allows users to shop her inventory online. The online shop uses Shopify to process orders and transactions. The home feed is sourced and updated from the shop's Instagram page.
-</p>
-
-<p>
-  <b>Currently under construction.</b>
+It contains information about the shop and allows users to shop the store's inventory online. The online shop uses Shopify to process orders and transactions. The home feed is sourced and updated from the shop's Instagram page.
 </p>
 
 <p>
