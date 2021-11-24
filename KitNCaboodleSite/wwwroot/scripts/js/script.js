@@ -8,13 +8,16 @@ function closeNav() {
     document.getElementById("navBar").style.display = "none";
 }
 
-$(window).resize(function () {
-    if ($(this).width() >= 1078) {
-        openNav();
-    }
+$(document).ready(function () {
+    $(window).resize(function () {
+        if ($(this).width() >= 1075) {
+            openNav();
+        }
+    });
+    $(window).resize(function () {
+        if ($(this).width() < 1075) {
+            closeNav();
+        }
+    });
 });
-$(window).resize(function () {
-    if ($(this).width() < 1078) {
-        closeNav();
-    }
-});
+
