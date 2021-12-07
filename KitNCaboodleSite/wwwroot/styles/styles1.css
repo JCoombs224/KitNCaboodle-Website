@@ -347,7 +347,7 @@ div.hidden {
 }
 
 /* Screen Size Adjustments */
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1085px) {
     .nav-wrapper {
         display: none;
         width: 60%;
